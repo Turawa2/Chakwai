@@ -16,10 +16,10 @@ export default function Login() {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={{ fontSize: 40, fontWeight: 900, color: "#7235ae", marginTop: 30, textAlign: "center" }}>
+        <Text style={{ fontSize: 40, fontWeight: 900, color: "#7235ae", marginTop: 20, textAlign: "center" }}>
           Chakwai
         </Text>
-        <Text style={{ fontSize: 25, fontWeight: 700, color: "#000", marginTop: 60, textAlign: "center" }}>
+        <Text style={{ fontSize: 25, fontWeight: 700, color: "#000", marginTop: 30, textAlign: "center" }}>
           Welcome Back!
         </Text>
       </View>
@@ -97,7 +97,7 @@ export default function Login() {
 
           {/* Apple Button */}
           <TouchableOpacity style={styles.socialLoginButton}>
-            <SocialIcon type="apple" raised={false} iconColor="#fff" style={styles.socialIcon} />
+            <SocialIcon type="apple" raised={false} iconColor="#000" style={styles.socialIcon} />
             <Text style={styles.socialLoginText}>Sign in with Apple</Text>
           </TouchableOpacity>
         </View>
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     width: "80%",
-    marginTop: 50,
+    marginTop: 20,
     margin: 20,
   },
   inputWrapper: {
@@ -199,11 +199,12 @@ const styles = StyleSheet.create({
   },
   socialIcon: {
     marginRight: 10,
-    width: 10,
-    height: 10
+    width: 15,
+    height: 15
   },
   socialLoginText: {
     color: '#aaa',
     fontSize: 16,
+    finrWeight: "700"
   },
 });
