@@ -10,7 +10,7 @@ export default function Login() {
   const [rememberMe, setRememberMe] = useState(false);
 
   const handleButtonClick = () => {
-    navigation.navigate("Login");
+    navigation.navigate("Foods");
   };
 
   return (
@@ -29,8 +29,8 @@ export default function Login() {
           <Icon name="envelope" size={24} color="#aaa" style={styles.icon} />
           <TextInput
             style={styles.input}
-            placeholder="Email"
-            placeholderTextColor="#aaa" // Set placeholder color
+            placeholder="devlord@gmail.com"
+            placeholderTextColor="#aaa" 
           />
         </View>
 
@@ -41,7 +41,7 @@ export default function Login() {
             style={styles.input}
             placeholder="Password"
             secureTextEntry={!passwordVisible}
-            placeholderTextColor="#aaa" // Set placeholder color
+            placeholderTextColor="#aaa" 
           />
           <TouchableOpacity
             onPress={() => setPasswordVisible(!passwordVisible)}
